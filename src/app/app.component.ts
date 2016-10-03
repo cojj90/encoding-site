@@ -6,7 +6,26 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 
 @Component({
-  template: `<ion-nav [root]="rootPage"></ion-nav>`
+  template: `
+  <ion-menu [content]="content">
+   <ion-header>
+  <ion-toolbar>
+    <ion-title>Pages</ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item>
+        Login
+      </button>
+      <button ion-item>
+        Signup
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+  <ion-nav #content [root]="rootPage" swipeBackEnabled="false"></ion-nav>
+  `
 })
 export class MyApp {
   rootPage = TabsPage;

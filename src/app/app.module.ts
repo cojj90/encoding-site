@@ -15,7 +15,11 @@ import { TabsPage } from '../pages/tabs/tabs';
     TabsPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,
+    {
+      
+    }
+    )
   ],
   bootstrap: [IonicApp],
   entryComponents: [
