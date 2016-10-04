@@ -1,3 +1,26 @@
 page-home {
 
 }
+
+
+@media all and (orientation:portrait) {
+
+@media (min-width: 367em) {
+    div.test:before{
+    content: "portraight: big";
+}
+}
+
+@media (max-width: 367px) {
+    div.test:before{
+    content: "portraight: small";
+}
+}
+
+}
+
+@media all and (orientation:landscape) {
+div.test:before{
+    content: "land";
+}
+}
