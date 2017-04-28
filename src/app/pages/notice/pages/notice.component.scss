@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+body {  margin:0;  padding:0; }
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  //border: 1px solid #000;
+
+  md-sidenav {
+    width: 250px;
+    
+  }
+
+  .mat-sidenav-content,
+  md-sidenav {
+    display: flex;
+    overflow: visible;
+    ::-webkit-scrollbar { 
+    display: none; 
+} 
+  }
+
+  .nav-wrapper {
+    width:250px;
+    // this is what makes the magic happens
+    overflow: auto;
+    // just to set the sidebar apart
+    background: #efefef;
+  }
+
+  .content-wrapper {
+    overflow: auto;
+  }
+  .main-content {
+    padding: 20px;
+  }
+
+}
+
+
+md-list-item:hover {
+  background: #666;
+  color: white;
+}

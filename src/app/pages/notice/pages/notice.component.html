@@ -1,0 +1,40 @@
+<md-sidenav-container class="main-container">
+  <md-sidenav class="main-sidenav" #sidenav mode="side" opened="true">
+    <div class="nav-wrapper">
+      <!-- this is here just to make the sidebar content scrollable -->
+      <md-nav-list>
+        <md-list-item *ngFor="let link of [1,2,3,4,5,6,7,8,9,10]">
+          <a md-line href="...">nav list item {{ link }}</a>
+          <button md-icon-button >
+            icon
+          </button>
+        </md-list-item>
+      </md-nav-list>
+      <!-- this is here just to make the sidebar content scrollable -->
+      <md-nav-list>
+        <md-list-item *ngFor="let link of [1,2,3,4,5,6,7,8,9,10]">
+          <a md-line href="...">nav list item 1{{ link }}</a>
+          <button md-icon-button >
+            icon
+          </button>
+        </md-list-item>
+      </md-nav-list>
+      <!-- this is here just to make the sidebar content scrollable -->
+      <md-nav-list>
+        <md-list-item *ngFor="let link of [1,2,3,4,5,6,7,8,9,10]">
+          <a md-line href="...">nav list item 2{{ link }}</a>
+          <button md-icon-button >
+            icon
+          </button>
+        </md-list-item>
+      </md-nav-list>
+    </div>
+  </md-sidenav>
+  <div class="content-wrapper">
+    <div class="main-content">
+      <!-- this is here just to make the content scrollable -->
+      Add a huge lorem ipsum here and you will see the results
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus </p>
+    </div>
+  </div>
+</md-sidenav-container>
