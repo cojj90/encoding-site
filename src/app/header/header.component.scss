@@ -1,13 +1,14 @@
 @import '../../style/global';
 $offset: 10px;
 
-md-toolbar.mat-toolbar {
+md-toolbar {
   // just to set the toolbar apart
   background-color: red;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.24);
   padding: 0;
   z-index: 500;
-
+  max-width: 1440px;
+  margin:0 auto;
   h1{
     width: $sideWidth;
     height: inherit;

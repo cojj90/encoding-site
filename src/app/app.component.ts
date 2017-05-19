@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  name = 'bobby2';
+  
+  constructor(){
+     setInterval(()=>{this.name+="9";}, 2000);
+  }
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    //we'll do some stuff here when the window is scrolled
+    debugger;
+  }
+
+ 
 }

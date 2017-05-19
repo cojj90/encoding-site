@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, Inject, Input } from '@angular/core';
+import { DOCUMENT } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-header',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   title = 'app header!';
+
+  @Input() name: string;
+  
+  constructor(@Inject(DOCUMENT) private document: Document){
+    
+  }
+
 }
